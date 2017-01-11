@@ -1,0 +1,1242 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    |   
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+    |   
+    meta(name="description", content="")
+    |   
+    meta(name="author", content="")
+    // <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    title Quirk Responsive Admin Templates
+    |   
+    link(rel="stylesheet", href="/public/css/hover.css")
+    |   
+    link(rel="stylesheet", href="/public/css/font-awesome.css")
+    |   
+    link(rel="stylesheet", href="/public/css/weather-icons.css")
+    |   
+    link(rel="stylesheet", href="/public/css/ionicons.css")
+    |   
+    link(rel="stylesheet", href="/public/css/toggles-full.css")
+    |   
+    link(rel="stylesheet", href="/public/css/morris.css")
+    |   
+    link(rel="stylesheet", href="/public/css/quirk.css")
+    |   
+    script(src="/public/js/modernizr.js")
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src="../lib/html5shiv/html5shiv.js")
+      |   
+      script(src="../lib/respond/respond.src.js")
+  body
+    header
+      .headerpanel
+        .logopanel
+          h2
+            a(href="index.html") Doru
+        // logopanel
+        .headerbar
+          a#menuToggle.menutoggle
+            i.fa.fa-bars
+          |       
+          .searchpanel
+            .input-group
+              input.form-control(type="text", placeholder="Search for...")
+              |           
+              span.input-group-btn
+                button.btn.btn-default(type="button")
+                  i.fa.fa-search
+            // input-group
+          |       
+          .header-right
+            ul.headermenu
+              li
+                #noticePanel.btn-group
+                  button.btn.btn-notice.alert-notice(data-toggle="dropdown")
+                    i.fa.fa-globe
+                  |               
+                  #noticeDropdown.dropdown-menu.dm-notice.pull-right
+                    div(role="tabpanel")
+                      // Nav tabs
+                      ul.nav.nav-tabs.nav-justified(role="tablist")
+                        li.active
+                          a(data-target="#notification", data-toggle="tab") Notifications (2)
+                        |                     
+                        li
+                          a(data-target="#reminders", data-toggle="tab") Reminders (4)
+                      // Tab panes
+                      .tab-content
+                        #notification.tab-pane.active(role="tabpanel")
+                          ul.list-group.notice-list
+                            li.list-group-item.unread
+                              .row
+                                .col-xs-2
+                                  i.fa.fa-envelope
+                                |                             
+                                .col-xs-10
+                                  h5
+                                    a(href="") New message from Weno Carasbong
+                                  |                               
+                                  small June 20, 2015
+                                  |                               
+                                  span Soluta nobis est eligendi optio cumque...
+                            |                         
+                            li.list-group-item.unread
+                              .row
+                                .col-xs-2
+                                  i.fa.fa-user
+                                |                             
+                                .col-xs-10
+                                  h5
+                                    a(href="") Renov Leonga is now following you!
+                                  |                               
+                                  small June 18, 2015
+                            |                         
+                            li.list-group-item
+                              .row
+                                .col-xs-2
+                                  i.fa.fa-user
+                                |                             
+                                .col-xs-10
+                                  h5
+                                    a(href="") Zaham Sindil is now following you!
+                                  |                               
+                                  small June 17, 2015
+                            |                         
+                            li.list-group-item
+                              .row
+                                .col-xs-2
+                                  i.fa.fa-thumbs-up
+                                |                             
+                                .col-xs-10
+                                  h5
+                                    a(href="") Rey Reslaba likes your post!
+                                  |                               
+                                  small June 16, 2015
+                                  |                               
+                                  span HTML5 For Beginners Chapter 1
+                            |                         
+                            li.list-group-item
+                              .row
+                                .col-xs-2
+                                  i.fa.fa-comment
+                                |                             
+                                .col-xs-10
+                                  h5
+                                    a(href="") Socrates commented on your post!
+                                  |                               
+                                  small June 16, 2015
+                                  |                               
+                                  span Temporibus autem et aut officiis debitis...
+                          |                       
+                          a.btn-more(href="")
+                            | View More Notifications 
+                            i.fa.fa-long-arrow-right
+                        // tab-pane
+                        #reminders.tab-pane(role="tabpanel")
+                          h1#todayDay.today-day ...
+                          |                       
+                          h3#todayDate.today-date ...
+                          |                       
+                          h5.today-weather
+                            i.wi.wi-hail
+                            |  Cloudy 77 Degree
+                          |                       
+                          p Thunderstorm in the area this afternoon through this evening
+                          |                       
+                          h4.panel-title Upcoming Events
+                          |                       
+                          ul.list-group
+                            li.list-group-item
+                              .row
+                                .col-xs-2
+                                  h4 20
+                                  |                               
+                                  p Aug
+                                |                             
+                                .col-xs-10
+                                  h5
+                                    a(href="") HTML5/CSS3 Live! United States
+                                  |                               
+                                  small San Francisco, CA
+                            |                         
+                            li.list-group-item
+                              .row
+                                .col-xs-2
+                                  h4 05
+                                  |                               
+                                  p Sep
+                                |                             
+                                .col-xs-10
+                                  h5
+                                    a(href="") Web Technology Summit
+                                  |                               
+                                  small Sydney, Australia
+                            |                         
+                            li.list-group-item
+                              .row
+                                .col-xs-2
+                                  h4 25
+                                  |                               
+                                  p Sep
+                                |                             
+                                .col-xs-10
+                                  h5
+                                    a(href="") HTML5 Developer Conference 2015
+                                  |                               
+                                  small Los Angeles CA United States
+                            |                         
+                            li.list-group-item
+                              .row
+                                .col-xs-2
+                                  h4 10
+                                  |                               
+                                  p Oct
+                                |                             
+                                .col-xs-10
+                                  h5
+                                    a(href="") AngularJS Conference 2015
+                                  |                               
+                                  small Silicon Valley CA, United States
+                          |                       
+                          a.btn-more(href="")
+                            | View More Events 
+                            i.fa.fa-long-arrow-right
+              |           
+              li
+                .btn-group
+                  button.btn.btn-logged(type="button", data-toggle="dropdown")
+                    img(src="/public/images/photos/loggeduser.png", alt="")
+                    |                 #{user.username}
+                    |                 
+                    span.caret
+                  |               
+                  ul.dropdown-menu.pull-right
+                    li
+                      a(href="profile.html")
+                        i.glyphicon.glyphicon-user
+                        |  My Profile
+                    |                 
+                    li
+                      a(href="#")
+                        i.glyphicon.glyphicon-cog
+                        |  Account Settings
+                    |                 
+                    li
+                      a(href="#")
+                        i.glyphicon.glyphicon-question-sign
+                        |  Help
+                    |                 
+                    li
+                      a(href="/logout")
+                        i.glyphicon.glyphicon-log-out
+                        |  Log Out
+              |           
+              li
+                button#chatview.btn.btn-chat.alert-notice
+                  span.badge-alert
+                  |               
+                  i.fa.fa-comments-o
+          // header-right
+        // headerbar
+      // header
+    section
+      .leftpanel
+        .leftpanelinner
+          // ################## LEFT PANEL PROFILE ##################
+          .media.leftpanel-profile
+            .media-left
+              a(href="#")
+                img.media-object.img-circle(src="../public/images/photos/loggeduser.png", alt="")
+            |         
+            .media-body
+              h4.media-heading
+                | #{user.username} 
+                a.pull-right(data-toggle="collapse", data-target="#loguserinfo")
+                  i.fa.fa-angle-down
+              |           
+              span Software Engineer
+          // leftpanel-profile
+          #loguserinfo.leftpanel-userinfo.collapse
+            h5.sidebar-title Address
+            |         
+            address
+              | 4975 Cambridge Road
+              | Miami Gardens, FL 33056
+            |         
+            h5.sidebar-title Contact
+            |         
+            ul.list-group
+              li.list-group-item
+                label.pull-left Email
+                |             
+                span.pull-right me@themepixels.com
+              |           
+              li.list-group-item
+                label.pull-left Home
+                |             
+                span.pull-right (032) 1234 567
+              |           
+              li.list-group-item
+                label.pull-left Mobile
+                |             
+                span.pull-right +63012 3456 789
+              |           
+              li.list-group-item
+                label.pull-left Social
+                |             
+                .social-icons.pull-right
+                  a(href="#")
+                    i.fa.fa-facebook-official
+                  |               
+                  a(href="#")
+                    i.fa.fa-twitter
+                  |               
+                  a(href="#")
+                    i.fa.fa-pinterest
+          // leftpanel-userinfo
+          ul.nav.nav-tabs.nav-justified.nav-sidebar
+            li.tooltips.active(data-toggle="tooltip", title="Main Menu")
+              a(data-toggle="tab", data-target="#mainmenu")
+                i.tooltips.fa.fa-ellipsis-h
+            |         
+            li.tooltips.unread(data-toggle="tooltip", title="Check Mail")
+              a(data-toggle="tab", data-target="#emailmenu")
+                i.tooltips.fa.fa-envelope
+            |         
+            li.tooltips(data-toggle="tooltip", title="Contacts")
+              a(data-toggle="tab", data-target="#contactmenu")
+                i.fa.fa-user
+            |         
+            li.tooltips(data-toggle="tooltip", title="Settings")
+              a(data-toggle="tab", data-target="#settings")
+                i.fa.fa-cog
+            |         
+            li.tooltips(data-toggle="tooltip", title="Log Out")
+              a(href="/logout")
+                i.fa.fa-sign-out
+          |       
+          .tab-content
+            // ################# MAIN MENU ###################
+            #mainmenu.tab-pane.active
+              h5.sidebar-title Favorites
+              |           
+              ul.nav.nav-pills.nav-stacked.nav-quirk
+                li.active
+                  a(href="index.html")
+                    i.fa.fa-home
+                    |  
+                    span Dashboard
+                |             
+                li
+                  a(href="widgets.html")
+                    span.badge.pull-right 10+
+                    i.fa.fa-cube
+                    |  
+                    span Widgets
+                |             
+                li
+                  a(href="maps.html")
+                    i.fa.fa-map-marker
+                    |  
+                    span Maps
+              |           
+              h5.sidebar-title Main Menu
+              |           
+              ul.nav.nav-pills.nav-stacked.nav-quirk
+                li.nav-parent
+                  a(href="")
+                    i.fa.fa-check-square
+                    |  
+                    span Forms
+                  |               
+                  ul.children
+                    li
+                      a(href="general-forms.html") Form Elements
+                    |                 
+                    li
+                      a(href="form-validation.html") Form Validation
+                    |                 
+                    li
+                      a(href="form-wizards.html") Form Wizards
+                    |                 
+                    li
+                      a(href="wysiwyg.html") Text Editor
+                |             
+                li.nav-parent
+                  a(href="")
+                    i.fa.fa-suitcase
+                    |  
+                    span UI Elements
+                  |               
+                  ul.children
+                    li
+                      a(href="buttons.html") Buttons
+                    |                 
+                    li
+                      a(href="icons.html") Icons
+                    |                 
+                    li
+                      a(href="typography.html") Typography
+                    |                 
+                    li
+                      a(href="alerts.html") Alerts & Notifications
+                    |                 
+                    li
+                      a(href="tabs-accordions.html") Tabs & Accordions
+                    |                 
+                    li
+                      a(href="sliders.html") Sliders
+                    |                 
+                    li
+                      a(href="graphs.html") Graphs & Charts
+                    |                 
+                    li
+                      a(href="panels.html") Panels
+                    |                 
+                    li
+                      a(href="extras.html") Extras
+                |             
+                li.nav-parent
+                  a(href="")
+                    i.fa.fa-th-list
+                    |  
+                    span Tables
+                  |               
+                  ul.children
+                    li
+                      a(href="basic-tables.html") Basic Tables
+                    |                 
+                    li
+                      a(href="data-tables.html") Data Tables
+                |             
+                li.nav-parent
+                  a(href="")
+                    i.fa.fa-file-text
+                    |  
+                    span Pages
+                  |               
+                  ul.children
+                    li
+                      a(href="asset-manager.html") Asset Manager
+                    |                 
+                    li
+                      a(href="people-directory.html") People Directory
+                    |                 
+                    li
+                      a(href="timeline.html") Timeline
+                    |                 
+                    li
+                      a(href="profile.html") Profile
+                    |                 
+                    li
+                      a(href="blank.html") Blank Page
+                    |                 
+                    li
+                      a(href="notfound.html") 404 Page
+                    |                 
+                    li
+                      a(href="/login") Sign In
+                    |                 
+                    li
+                      a(href="signup.html") Sign Up
+            // tab-pane
+            // ######################## EMAIL MENU #####################
+            #emailmenu.tab-pane
+              .sidebar-btn-wrapper
+                a.btn.btn-danger.btn-block(href="compose.html") Compose
+              |           
+              h5.sidebar-title Mailboxes
+              |           
+              ul.nav.nav-pills.nav-stacked.nav-quirk.nav-mail
+                li
+                  a(href="email.html")
+                    i.fa.fa-inbox
+                    |  
+                    span Inbox (3)
+                |             
+                li
+                  a(href="email.html")
+                    i.fa.fa-pencil
+                    |  
+                    span Draft (2)
+                |             
+                li
+                  a(href="email.html")
+                    i.fa.fa-paper-plane
+                    |  
+                    span Sent
+              |           
+              h5.sidebar-title Tags
+              |           
+              ul.nav.nav-pills.nav-stacked.nav-quirk.nav-label
+                li
+                  a(href="#")
+                    i.fa.fa-tags.primary
+                    |  
+                    span Communication
+                |             
+                li
+                  a(href="#")
+                    i.fa.fa-tags.success
+                    |  
+                    span Updates
+                |             
+                li
+                  a(href="#")
+                    i.fa.fa-tags.warning
+                    |  
+                    span Promotions
+                |             
+                li
+                  a(href="#")
+                    i.fa.fa-tags.danger
+                    |  
+                    span Social
+            // tab-pane
+            // ################### CONTACT LIST ###################
+            #contactmenu.tab-pane
+              .input-group.input-search-contact
+                input.form-control(type="text", placeholder="Search contact")
+                |             
+                span.input-group-btn
+                  button.btn.btn-default(type="button")
+                    i.fa.fa-search
+              |           
+              h5.sidebar-title My Contacts
+              |           
+              ul.media-list.media-list-contacts
+                li.media
+                  a(href="#")
+                    .media-left
+                      img.media-object.img-circle(src="../public/images/photos/user1.png", alt="")
+                    |                 
+                    .media-body
+                      h4.media-heading Christina R. Hill
+                      |                   
+                      span
+                        i.fa.fa-phone
+                        |  386-752-1860
+                |             
+                li.media
+                  a(href="#")
+                    .media-left
+                      img.media-object.img-circle(src="../public/images/photos/user2.png", alt="")
+                    |                 
+                    .media-body
+                      h4.media-heading Floyd M. Romero
+                      |                   
+                      span
+                        i.fa.fa-mobile
+                        |  +1614-650-8281
+                |             
+                li.media
+                  a(href="#")
+                    .media-left
+                      img.media-object.img-circle(src="../public/images/photos/user3.png", alt="")
+                    |                 
+                    .media-body
+                      h4.media-heading Jennie S. Gray
+                      |                   
+                      span
+                        i.fa.fa-phone
+                        |  310-757-8444
+                |             
+                li.media
+                  a(href="#")
+                    .media-left
+                      img.media-object.img-circle(src="../public/images/photos/user4.png", alt="")
+                    |                 
+                    .media-body
+                      h4.media-heading Alia J. Locher
+                      |                   
+                      span
+                        i.fa.fa-mobile
+                        |  +1517-386-0059
+                |             
+                li.media
+                  a(href="#")
+                    .media-left
+                      img.media-object.img-circle(src="../public/images/photos/user5.png", alt="")
+                    |                 
+                    .media-body
+                      h4.media-heading Nicholas T. Hinkle
+                      |                   
+                      span
+                        i.fa.fa-skype
+                        |  nicholas.hinkle
+                |             
+                li.media
+                  a(href="#")
+                    .media-left
+                      img.media-object.img-circle(src="../public/images/photos/user6.png", alt="")
+                    |                 
+                    .media-body
+                      h4.media-heading Jamie W. Bradford
+                      |                   
+                      span
+                        i.fa.fa-phone
+                        |  225-270-2425
+                |             
+                li.media
+                  a(href="#")
+                    .media-left
+                      img.media-object.img-circle(src="../public/images/photos/user7.png", alt="")
+                    |                 
+                    .media-body
+                      h4.media-heading Pamela J. Stump
+                      |                   
+                      span
+                        i.fa.fa-mobile
+                        |  +1773-879-2491
+                |             
+                li.media
+                  a(href="#")
+                    .media-left
+                      img.media-object.img-circle(src="../public/images/photos/user8.png", alt="")
+                    |                 
+                    .media-body
+                      h4.media-heading Refugio C. Burgess
+                      |                   
+                      span
+                        i.fa.fa-mobile
+                        |  +1660-627-7184
+                |             
+                li.media
+                  a(href="#")
+                    .media-left
+                      img.media-object.img-circle(src="../public/images/photos/user9.png", alt="")
+                    |                 
+                    .media-body
+                      h4.media-heading Ashley T. Brewington
+                      |                   
+                      span
+                        i.fa.fa-skype
+                        |  ashley.brewington
+                |             
+                li.media
+                  a(href="#")
+                    .media-left
+                      img.media-object.img-circle(src="../public/images/photos/user10.png", alt="")
+                    |                 
+                    .media-body
+                      h4.media-heading Roberta F. Horn
+                      |                   
+                      span
+                        i.fa.fa-phone
+                        |  716-630-0132
+            // tab-pane
+            // #################### SETTINGS ###################
+            #settings.tab-pane
+              h5.sidebar-title General Settings
+              |           
+              ul.list-group.list-group-settings
+                li.list-group-item
+                  h5 Daily Newsletter
+                  |               
+                  small Get notified when someone else is trying to access your account.
+                  |               
+                  .toggle-wrapper
+                    .leftpanel-toggle.toggle-light.success
+                |             
+                li.list-group-item
+                  h5 Call Phones
+                  |               
+                  small Make calls to friends and family right from your account.
+                  |               
+                  .toggle-wrapper
+                    .leftpanel-toggle-off.toggle-light.success
+              |           
+              h5.sidebar-title Security Settings
+              |           
+              ul.list-group.list-group-settings
+                li.list-group-item
+                  h5 Login Notifications
+                  |               
+                  small Get notified when someone else is trying to access your account.
+                  |               
+                  .toggle-wrapper
+                    .leftpanel-toggle.toggle-light.success
+                |             
+                li.list-group-item
+                  h5 Phone Approvals
+                  |               
+                  small Use your phone when login as an extra layer of security.
+                  |               
+                  .toggle-wrapper
+                    .leftpanel-toggle.toggle-light.success
+            // tab-pane
+          // tab-content
+        // leftpanelinner
+      // leftpanel
+      .mainpanel
+        //
+          <div class="pageheader">
+          <h2><i class="fa fa-home"></i> Dashboard</h2>
+          </div>
+        .contentpanel
+          .row
+            .col-md-9.col-lg-8.dash-left
+              .panel.panel-announcement
+                ul.panel-options
+                  li
+                    a
+                      i.fa.fa-refresh
+                  |               
+                  li
+                    a.panel-remove
+                      i.fa.fa-remove
+                |             
+                .panel-heading
+                  h4.panel-title Latest Announcement
+                |             
+                .panel-body
+                  h2
+                    | A new admin template has been released by 
+                    span.text-primary ThemePixels
+                    |  with a name 
+                    span.text-success Quirk
+                    |  is now live and available for purchase!
+                  |               
+                  h4
+                    | Explore this new template and see the beauty of Quirk! 
+                    a(href="") Take a Tour!
+              // panel
+              .panel.panel-site-traffic
+                .panel-heading
+                  ul.panel-options
+                    li
+                      a
+                        i.fa.fa-refresh
+                  |               
+                  h4.panel-title.text-success How Engaged Our Users Daily
+                  |               
+                  p.nomargin Past 30 Days — Last Updated July 14, 2015
+                |             
+                .panel-body
+                  .row
+                    .col-xs-6.col-sm-4
+                      .pull-left
+                        .icon.icon.ion-stats-bars
+                      |                   
+                      .pull-left
+                        h4.panel-title Bounce Rate
+                        |                     
+                        h3 23.30%
+                        |                     
+                        h5.text-success 2.00% increased
+                    |                 
+                    .col-xs-6.col-sm-4
+                      .pull-left
+                        .icon.icon.ion-eye
+                      |                   
+                      h4.panel-title Pageviews / Visitor
+                      |                   
+                      h3 38.10
+                      |                   
+                      h5.text-danger 5.70% decreased
+                    |                 
+                    .col-xs-6.col-sm-4
+                      .pull-left
+                        .icon.icon.ion-clock
+                      |                   
+                      h4.panel-title Time on Site
+                      |                   
+                      h3 4:45
+                      |                   
+                      h5.text-success 5.00% increased
+                  // row
+                  .mb20
+                  |               
+                  #basicflot(style="height: 263px")
+                // panel-body
+                .table-responsive
+                  table.table.table-bordered.table-default.table-striped.nomargin
+                    thead.success
+                      tr
+                        th Country
+                        |                     
+                        th.text-right % of Visitors
+                        |                     
+                        th.text-right Bounce Rate
+                        |                     
+                        th.text-right Page View
+                    |                 
+                    tbody
+                      tr
+                        td United States
+                        |                     
+                        td.text-right 61%
+                        |                     
+                        td.text-right 25.87%
+                        |                     
+                        td.text-right 55.23
+                      |                   
+                      tr
+                        td Canada
+                        |                     
+                        td.text-right 13%
+                        |                     
+                        td.text-right 23.12%
+                        |                     
+                        td.text-right 65.00
+                      |                   
+                      tr
+                        td Great Britain
+                        |                     
+                        td.text-right 10%
+                        |                     
+                        td.text-right 20.43%
+                        |                     
+                        td.text-right 67.99
+                      |                   
+                      tr
+                        td Philippines
+                        |                     
+                        td.text-right 7%
+                        |                     
+                        td.text-right 18.17%
+                        |                     
+                        td.text-right 55.13
+                      |                   
+                      tr
+                        td Australia
+                        |                     
+                        td.text-right 6.03%
+                        |                     
+                        td.text-right 17.67%
+                        |                     
+                        td.text-right 67.05
+                // table-responsive
+              // panel
+              .row.panel-statistics
+                .col-sm-6
+                  .panel.panel-updates
+                    .panel-body
+                      .row
+                        .col-xs-7.col-lg-8
+                          h4.panel-title.text-success Products Added
+                          |                       
+                          h3 75.7%
+                          |                       
+                          .progress
+                            .progress-bar.progress-bar-success(style="width: 75.7%", aria-valuemax="100", aria-valuemin="0", aria-valuenow="75.7", role="progressbar")
+                              span.sr-only 75.7% Complete (success)
+                          |                       
+                          p Added products for this month: 75
+                        |                     
+                        .col-xs-5.col-lg-4.text-right
+                          input.dial-success(type="text", value="75")
+                  // panel
+                // col-sm-6
+                .col-sm-6
+                  .panel.panel-danger-full.panel-updates
+                    .panel-body
+                      .row
+                        .col-xs-7.col-lg-8
+                          h4.panel-title.text-warning Products Rejected
+                          |                       
+                          h3 39.9%
+                          |                       
+                          .progress
+                            .progress-bar.progress-bar-warning(style="width: 39.9%", aria-valuemax="100", aria-valuemin="0", aria-valuenow="39.9", role="progressbar")
+                              span.sr-only 39.9% Complete (success)
+                          |                       
+                          p Rejected products for this month: 45
+                        |                     
+                        .col-xs-5.col-lg-4.text-right
+                          input.dial-warning(type="text", value="45")
+                  // panel
+                // col-sm-6
+                .col-sm-6
+                  .panel.panel-success-full.panel-updates
+                    .panel-body
+                      .row
+                        .col-xs-7.col-lg-8
+                          h4.panel-title.text-success Products Sold
+                          |                       
+                          h3 55.4%
+                          |                       
+                          .progress
+                            .progress-bar.progress-bar-info(style="width: 55.4%", aria-valuemax="100", aria-valuemin="0", aria-valuenow="55.4", role="progressbar")
+                              span.sr-only 55.4% Complete (success)
+                          |                       
+                          p Sold products for this month: 1,203
+                        |                     
+                        .col-xs-5.col-lg-4.text-right
+                          input.dial-info(type="text", value="55")
+                  // panel
+                // col-sm-6
+                .col-sm-6
+                  .panel.panel-updates
+                    .panel-body
+                      .row
+                        .col-xs-7.col-lg-8
+                          h4.panel-title.text-danger Products Returned
+                          |                       
+                          h3 22.1%
+                          |                       
+                          .progress
+                            .progress-bar.progress-bar-danger(style="width: 22.1%", aria-valuemax="100", aria-valuemin="0", aria-valuenow="22.1", role="progressbar")
+                              span.sr-only 22.1% Complete (success)
+                          |                       
+                          p Returned products this month: 22
+                        |                     
+                        .col-xs-5.col-lg-4.text-right
+                          input.dial-danger(type="text", value="22")
+                  // panel
+                // col-sm-6
+              // row
+              .row.row-col-join.panel-earnings
+                .col-xs-3.col-sm-4.col-lg-3
+                  .panel
+                    ul.panel-options
+                      li
+                        a
+                          i.glyphicon.glyphicon-option-vertical
+                    |                 
+                    .panel-heading
+                      h4.panel-title Total Earnings
+                    |                 
+                    .panel-body
+                      h3.earning-amount $1,543.03
+                      |                   
+                      h4.earning-today Today's Earnings
+                      |                   
+                      ul.list-group
+                        li.list-group-item
+                          | This Week 
+                          span.pull-right $12,320.34
+                        |                     
+                        li.list-group-item
+                          | This Month 
+                          span.pull-right $37,520.34
+                      |                   
+                      hr.invisible
+                      |                   
+                      p Total items sold this month: 325
+                  // panel
+                |             
+                .col-xs-9.col-sm-8.col-lg-9
+                  .panel
+                    .panel-heading
+                      h4.panel-title Earnings Graph Overview
+                    |                 
+                    .panel-body
+                      #line-chart.body-chart
+              |           
+              .row.panel-quick-page
+                .col-xs-4.col-sm-5.col-md-4.page-user
+                  .panel
+                    .panel-heading
+                      h4.panel-title Manage Users
+                    |                 
+                    .panel-body
+                      .page-icon
+                        i.icon.ion-person-stalker
+                |             
+                .col-xs-4.col-sm-4.col-md-4.page-products
+                  .panel
+                    .panel-heading
+                      h4.panel-title Manage Products
+                    |                 
+                    .panel-body
+                      .page-icon
+                        i.fa.fa-shopping-cart
+                |             
+                .col-xs-4.col-sm-3.col-md-2.page-events
+                  .panel
+                    .panel-heading
+                      h4.panel-title Events
+                    |                 
+                    .panel-body
+                      .page-icon
+                        i.icon.ion-ios-calendar-outline
+                |             
+                .col-xs-4.col-sm-3.col-md-2.page-messages
+                  .panel
+                    .panel-heading
+                      h4.panel-title Messages
+                    |                 
+                    .panel-body
+                      .page-icon
+                        i.icon.ion-email
+                |             
+                .col-xs-4.col-sm-5.col-md-2.page-reports
+                  .panel
+                    .panel-heading
+                      h4.panel-title Reports
+                    |                 
+                    .panel-body
+                      .page-icon
+                        i.icon.ion-arrow-graph-up-right
+                |             
+                .col-xs-4.col-sm-4.col-md-2.page-statistics
+                  .panel
+                    .panel-heading
+                      h4.panel-title Statistics
+                    |                 
+                    .panel-body
+                      .page-icon
+                        i.icon.ion-ios-pulse-strong
+                |             
+                .col-xs-4.col-sm-4.col-md-4.page-support
+                  .panel
+                    .panel-heading
+                      h4.panel-title Manage Support
+                    |                 
+                    .panel-body
+                      .page-icon
+                        i.icon.ion-help-buoy
+                |             
+                .col-xs-4.col-sm-4.col-md-2.page-privacy
+                  .panel
+                    .panel-heading
+                      h4.panel-title Privacy
+                    |                 
+                    .panel-body
+                      .page-icon
+                        i.icon.ion-android-lock
+                |             
+                .col-xs-4.col-sm-4.col-md-2.page-settings
+                  .panel
+                    .panel-heading
+                      h4.panel-title Settings
+                    |                 
+                    .panel-body
+                      .page-icon
+                        i.icon.ion-gear-a
+              // row
+            // col-md-9
+            .col-md-3.col-lg-4.dash-right
+              .row
+                .col-sm-5.col-md-12.col-lg-6
+                  .panel.panel-danger.panel-weather
+                    .panel-heading
+                      h4.panel-title Weather Forecast
+                    |                 
+                    .panel-body.inverse
+                      .row.mb10
+                        .col-xs-6
+                          h2.today-day Monday
+                          |                       
+                          h3.today-date July 13, 2015
+                        |                     
+                        .col-xs-6
+                          i.wi.wi-hail.today-cloud
+                      |                   
+                      p.nomargin Thunderstorm in the area of responsibility this afternoon through this evening.
+                      |                   
+                      .row.mt10
+                        .col-xs-7
+                          strong Temperature:
+                          |  (Celcius) 19
+                        |                     
+                        .col-xs-5
+                          strong Wind:
+                          |  30+ mph
+                // col-md-12
+                .col-sm-5.col-md-12.col-lg-6
+                  .panel.panel-primary.list-announcement
+                    .panel-heading
+                      h4.panel-title Previous Announcements
+                    |                 
+                    .panel-body
+                      ul.list-unstyled.mb20
+                        li
+                          a(href="") Testing Credit Card Payments on...
+                          |                       
+                          small
+                            | June 30, 2015 
+                            a(href="") 7 shares
+                        |                     
+                        li
+                          a(href="") A Shopping Cart for New and...
+                          |                       
+                          small
+                            | June 15, 2015   
+                            a(href="") 11 shares
+                        |                     
+                        li
+                          a(href="") A Shopping Cart for New and...
+                          |                       
+                          small
+                            | June 15, 2015   
+                            a(href="") 2 shares
+                    |                 
+                    .panel-footer
+                      button.btn.btn-primary.btn-block
+                        | View More Announcements 
+                        i.fa.fa-arrow-right
+                // col-md-12
+              // row
+              .row
+                .col-sm-5.col-md-12.col-lg-6
+                  .panel.panel-success
+                    .panel-heading
+                      h4.panel-title Recent User Activity
+                    |                 
+                    .panel-body
+                      ul.media-list.user-list
+                        li.media
+                          .media-left
+                            a(href="#")
+                              img.media-object.img-circle(src="../public/images/photos/user2.png", alt="")
+                          |                       
+                          .media-body
+                            h4.media-heading.nomargin
+                              a(href="") Floyd M. Romero
+                            |                         is now following 
+                            a(href="") Christina R. Hill
+                            |                         
+                            small.date
+                              i.glyphicon.glyphicon-time
+                              |  Just now
+                        |                     
+                        li.media
+                          .media-left
+                            a(href="#")
+                              img.media-object.img-circle(src="../public/images/photos/user10.png", alt="")
+                          |                       
+                          .media-body
+                            h4.media-heading.nomargin
+                              a(href="") Roberta F. Horn
+                            |                         commented on 
+                            a(href="") HTML5 Tutorial
+                            |                         
+                            small.date
+                              i.glyphicon.glyphicon-time
+                              |  Yesterday
+                        |                     
+                        li.media
+                          .media-left
+                            a(href="#")
+                              img.media-object.img-circle(src="../public/images/photos/user3.png", alt="")
+                          |                       
+                          .media-body
+                            h4.media-heading.nomargin
+                              a(href="") Jennie S. Gray
+                            |                         posted a video on 
+                            a(href="") The Discovery
+                            |                         
+                            small.date
+                              i.glyphicon.glyphicon-time
+                              |  June 25, 2015
+                        |                     
+                        li.media
+                          .media-left
+                            a(href="#")
+                              img.media-object.img-circle(src="../public/images/photos/user5.png", alt="")
+                          |                       
+                          .media-body
+                            h4.media-heading.nomargin
+                              a(href="") Nicholas T. Hinkle
+                            |                         liked your video on 
+                            a(href="") The Discovery
+                            |                         
+                            small.date
+                              i.glyphicon.glyphicon-time
+                              |  June 24, 2015
+                        |                     
+                        li.media
+                          .media-left
+                            a(href="#")
+                              img.media-object.img-circle(src="../public/images/photos/user2.png", alt="")
+                          |                       
+                          .media-body
+                            h4.media-heading.nomargin
+                              a(href="") Floyd M. Romero
+                            |                         liked your photo on 
+                            a(href="") My Life Adventure
+                            |                         
+                            small.date
+                              i.glyphicon.glyphicon-time
+                              |  June 24, 2015
+                  // panel
+                |             
+                .col-sm-5.col-md-12.col-lg-6
+                  .panel.panel-inverse
+                    .panel-heading
+                      h4.panel-title Most Followed Users
+                    |                 
+                    .panel-body
+                      ul.media-list.user-list
+                        li.media
+                          .media-left
+                            a(href="#")
+                              img.media-object.img-circle(src="../public/images/photos/user9.png", alt="")
+                          |                       
+                          .media-body
+                            h4.media-heading
+                              a(href="") Ashley T. Brewington
+                            |                         
+                            span 5,323
+                            |  Followers
+                        |                     
+                        li.media
+                          .media-left
+                            a(href="#")
+                              img.media-object.img-circle(src="../public/images/photos/user10.png", alt="")
+                          |                       
+                          .media-body
+                            h4.media-heading
+                              a(href="") Roberta F. Horn
+                            |                         
+                            span 4,100
+                            |  Followers
+                        |                     
+                        li.media
+                          .media-left
+                            a(href="#")
+                              img.media-object.img-circle(src="../public/images/photos/user3.png", alt="")
+                          |                       
+                          .media-body
+                            h4.media-heading
+                              a(href="") Jennie S. Gray
+                            |                         
+                            span 3,508
+                            |  Followers
+                        |                     
+                        li.media
+                          .media-left
+                            a(href="#")
+                              img.media-object.img-circle(src="../public/images/photos/user4.png", alt="")
+                          |                       
+                          .media-body
+                            h4.media-heading
+                              a(href="") Alia J. Locher
+                            |                         
+                            span 3,508
+                            |  Followers
+                        |                     
+                        li.media
+                          .media-left
+                            a(href="#")
+                              img.media-object.img-circle(src="../public/images/photos/user6.png", alt="")
+                          |                       
+                          .media-body
+                            h4.media-heading
+                              a(href="") Jamie W. Bradford
+                            |                         
+                            span 2,001
+                            |  Followers
+              // row
+            // col-md-3
+          // row
+        // contentpanel
+      // mainpanel
+    script(src="../public/js/jquery.js")
+    script(src="../public/js/jquery-ui.js")
+    script(src="../public/js/bootstrap.js")
+    script(src="../public/js/toggles.js")
+    script(src="../public/js/morris.js")
+    script(src="../public/js/raphael.js")
+    script(src="../public/js/jquery.flot.js")
+    script(src="../public/js/jquery.flot.resize.js")
+    script(src="../public/js/jquery.flot.spline.js")
+    script(src="../public/js/jquery.knob.js")
+    script(src="../public/js/quirk.js")
+    script(src="../public/js/dashboard.js")

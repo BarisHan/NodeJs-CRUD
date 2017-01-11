@@ -1,0 +1,25 @@
+ul
+ li #{item.kort}
+ li #{item.saat}
+ li #{item.gun}
+ li #{item.isim}
+ li #{item.islemVakti}
+
+form(action="/rezervasyon/guncelle/#{item._id}" method="post")
+ .form-group
+   label(for="usr") Kort:
+   |   
+   input#usr.form-control(type="text" name="kort")
+ .form-group
+   label(for="usr") Saat:
+   |   
+   input#usr.form-control(type="text" name="saat")
+ .form-group
+   label(for="usr") Gün:
+   |   
+   input#usr.form-control(type="text" name="gun")
+ .form-group
+   label(for="usr") İsim:
+   |   
+   input#usr.form-control(type="text" name="isim")
+ button.btn.btn-default(type="submit") Gönder

@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    |   
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+    |   
+    meta(name="description", content="")
+    |   
+    meta(name="author", content="")
+    // <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    title Quirk Responsive Admin Templates
+    |   
+    link(rel="stylesheet", href="../public/css/font-awesome.css")
+    |   
+    link(rel="stylesheet", href="../public/css/quirk.css")
+    |   
+    script(src="../public/js/modernizr.js")
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src="../lib/html5shiv/html5shiv.js")
+      |   
+      script(src="../lib/respond/respond.src.js")
+  body.signwrapper
+    .sign-overlay
+    |   
+    .signpanel
+    |   
+    .panel.signin
+      .panel-heading
+        h1 Doru
+        |       
+        
+      |     
+      .panel-body
+        
+        |       
+        if error
+         h4(style="color:#c9302c") #{error}
+        |       
+        form(action="/login" method="post")
+          .form-group.mb10
+            .input-group
+              span.input-group-addon
+                i.glyphicon.glyphicon-user
+              |             
+              input.form-control(type="text", placeholder="Kullanıcı Adı", name="username")
+          |         
+          .form-group.nomargin
+            .input-group
+              span.input-group-addon
+                i.glyphicon.glyphicon-lock
+              |             
+              input.form-control(type="password", placeholder="Şifre", name="password")
+          |         
+          div
+            a.forgot(href="")
+          |         
+          .form-group
+            button.btn.btn-success.btn-quirk.btn-block Giriş Yap
+        |       
+        hr.invisible
+        |       
+        
+    // panel

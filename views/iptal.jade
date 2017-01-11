@@ -1,0 +1,9 @@
+ul
+ li #{item.kort}
+ li #{item.saat}
+ li #{item.gun}
+ li #{item.isim}
+ li #{item.islemVakti}
+ 
+ form(action="/rezervasyon/iptal/#{item._id}" method="post")
+  button.btn.btn-default(type="submit") Rezervasyonu Sil
